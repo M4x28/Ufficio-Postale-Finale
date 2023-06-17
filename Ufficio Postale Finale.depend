@@ -1,0 +1,119 @@
+# depslib dependency file v1.0
+1686920970 source:c:\users\leobi\downloads\ufficio postale finale\cittadinocoda.c
+	<stdlib.h>
+	<string.h>
+	"CittadinoCoda.h"
+
+1686907094 c:\users\leobi\downloads\ufficio postale finale\cittadinocoda.h
+
+1686945668 source:c:\users\leobi\downloads\ufficio postale finale\gestorefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"CittadinoCoda.h"
+	"GestoreFile.h"
+	"validatore.h"
+
+1686946904 c:\users\leobi\downloads\ufficio postale finale\gestorefile.h
+	"CittadinoCoda.h"
+	<stdio.h>
+
+1686936800 c:\users\leobi\downloads\ufficio postale finale\validatore.h
+	<stdbool.h>
+	"CittadinoCoda.h"
+
+1686946975 source:c:\users\leobi\downloads\ufficio postale finale\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CittadinoCoda.h"
+	"Funzioni.h"
+	"GestoreFile.h"
+	"InputOutput.h"
+
+1686932313 c:\users\leobi\downloads\ufficio postale finale\funzioni.h
+
+1686944714 c:\users\leobi\downloads\ufficio postale finale\inputoutput.h
+	"CittadinoCoda.h"
+
+1686939775 source:c:\users\leobi\downloads\ufficio postale finale\validatore.c
+	<ctype.h>
+	<stdbool.h>
+	<string.h>
+	"GestoreFile.h"
+	"Validatore.h"
+
+1686945453 source:c:\users\leobi\downloads\ufficio postale finale\funzioni.c
+	<stdlib.h>
+	<string.h>
+	"CittadinoCoda.h"
+	"Funzioni.h"
+	"GestoreFile.h"
+	"InputOutput.h"
+	"Validatore.h"
+
+1686945668 source:c:\users\leobi\downloads\ufficio postale finale\inputoutput.c
+	<stdio.h>
+	<unistd.h>
+	"InputOutput.h"
+	"Validatore.h"
+
+1686965158 source:c:\users\leobi\desktop\ufficio postale finale\cittadinocoda.c
+	<stdlib.h>
+	<string.h>
+	"CittadinoCoda.h"
+
+1686965219 c:\users\leobi\desktop\ufficio postale finale\cittadinocoda.h
+
+1686964232 source:c:\users\leobi\desktop\ufficio postale finale\funzioni.c
+	<stdlib.h>
+	<string.h>
+	"CittadinoCoda.h"
+	"Funzioni.h"
+	"GestoreFile.h"
+	"InputOutput.h"
+	"Validatore.h"
+
+1686965343 c:\users\leobi\desktop\ufficio postale finale\funzioni.h
+
+1686965706 c:\users\leobi\desktop\ufficio postale finale\gestorefile.h
+	<stdio.h>
+	"CittadinoCoda.h"
+
+1686965712 c:\users\leobi\desktop\ufficio postale finale\inputoutput.h
+	"CittadinoCoda.h"
+
+1686965627 c:\users\leobi\desktop\ufficio postale finale\validatore.h
+	<stdbool.h>
+	"CittadinoCoda.h"
+
+1686966227 source:c:\users\leobi\desktop\ufficio postale finale\gestorefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"CittadinoCoda.h"
+	"GestoreFile.h"
+	"validatore.h"
+
+1686956181 source:c:\users\leobi\desktop\ufficio postale finale\inputoutput.c
+	<stdio.h>
+	<unistd.h>
+	"InputOutput.h"
+	"Validatore.h"
+
+1686964241 source:c:\users\leobi\desktop\ufficio postale finale\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CittadinoCoda.h"
+	"Funzioni.h"
+	"GestoreFile.h"
+	"InputOutput.h"
+
+1686965758 source:c:\users\leobi\desktop\ufficio postale finale\validatore.c
+	<ctype.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	"GestoreFile.h"
+	"Validatore.h"
+

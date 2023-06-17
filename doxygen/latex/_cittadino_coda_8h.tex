@@ -1,0 +1,203 @@
+\doxysection{Riferimenti per il file C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Cittadino\+Coda.h}
+\hypertarget{_cittadino_coda_8h}{}\label{_cittadino_coda_8h}\index{C:/Users/leobi/Desktop/Ufficio Postale Finale/CittadinoCoda.h@{C:/Users/leobi/Desktop/Ufficio Postale Finale/CittadinoCoda.h}}
+\doxysubsubsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_nodo}{Nodo}} \mbox{\hyperlink{_cittadino_coda_8h_ab27a17935caedd91258058c352971251}{Nodo}}
+\item 
+typedef struct \mbox{\hyperlink{struct_coda}{Coda}} \mbox{\hyperlink{_cittadino_coda_8h_a59a13d21a46d899cde6fb22d073d1cd9}{Coda}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_cittadino_coda_8h_a69f6ad5cb092a53058b86430563284f7}{coda\+\_\+crea}} ()
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_ada3e72f15b3e8c5e7fd76bd6984a2d2c}{coda\+\_\+inserisci}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda, char Codice\+Arrivo\mbox{[}3\mbox{]}, char Codice\+Fiscale\mbox{[}17\mbox{]}, int Numero\+Bollettino\+Postale, char Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]}, int Importo\+Bollettino)
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_abe48fc7b7fde297d62c9aa6f2f351ba4}{coda\+\_\+rimuovi}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_aeb0b64e9584a556d1dd9d5452e5f6e85}{coda\+\_\+primo}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda, char Codice\+Arrivo\mbox{[}3\mbox{]}, char Codice\+Fiscale\mbox{[}17\mbox{]}, int \texorpdfstring{$\ast$}{*}Numero\+Bollettino\+Postale, char Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]}, int \texorpdfstring{$\ast$}{*}Importo\+Bollettino)
+\item 
+int \mbox{\hyperlink{_cittadino_coda_8h_a6da59045a6d4d240d7d634ead7c4433b}{coda\+\_\+vuota}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_a85adadc6cf76a019bc1e195fbb74d8b2}{coda\+\_\+distruggi}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_a64282da119728de4109c2845eb6dc6eb}{Set\+Flag\+Positivo}} ()
+\item 
+void \mbox{\hyperlink{_cittadino_coda_8h_a4ad948fd6571af55d34f207a1d1b7b6b}{Set\+Flag\+Negativo}} ()
+\item 
+int \mbox{\hyperlink{_cittadino_coda_8h_ad60826d2814a29f1c857e162e5e57c04}{Get\+Flag\+Acquisizione}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file contiene le definizioni delle strutture e delle funzioni per la creazione e la manipolazione di una coda di cittadini.
+
+Dichiarazione dell\textquotesingle{}ADT \doxylink{struct_coda}{Coda} e delle relative operazioni. 
+
+\doxysubsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\Hypertarget{_cittadino_coda_8h_a59a13d21a46d899cde6fb22d073d1cd9}\label{_cittadino_coda_8h_a59a13d21a46d899cde6fb22d073d1cd9} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!Coda@{Coda}}
+\index{Coda@{Coda}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{Coda}{Coda}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_coda}{Coda}} \mbox{\hyperlink{struct_coda}{Coda}}}
+
+Struttura dell\textquotesingle{}ADT \doxylink{struct_coda}{Coda}. \Hypertarget{_cittadino_coda_8h_ab27a17935caedd91258058c352971251}\label{_cittadino_coda_8h_ab27a17935caedd91258058c352971251} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!Nodo@{Nodo}}
+\index{Nodo@{Nodo}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{Nodo}{Nodo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_nodo}{Nodo}} \mbox{\hyperlink{struct_nodo}{Nodo}}}
+
+Struttura del nodo della coda. 
+
+\doxysubsection{Documentazione delle funzioni}
+\Hypertarget{_cittadino_coda_8h_a69f6ad5cb092a53058b86430563284f7}\label{_cittadino_coda_8h_a69f6ad5cb092a53058b86430563284f7} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_crea@{coda\_crea}}
+\index{coda\_crea@{coda\_crea}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_crea()}{coda\_crea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*} coda\+\_\+crea (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crea e restituisce una nuova coda vuota. \begin{DoxyReturn}{Restituisce}
+Puntatore alla nuova coda creata.
+\end{DoxyReturn}
+Crea e restituisce una nuova coda vuota. \begin{DoxyPostcond}{Postcondizione}
+Puntatore alla nuova coda creata. 
+\end{DoxyPostcond}
+\Hypertarget{_cittadino_coda_8h_a85adadc6cf76a019bc1e195fbb74d8b2}\label{_cittadino_coda_8h_a85adadc6cf76a019bc1e195fbb74d8b2} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_distruggi@{coda\_distruggi}}
+\index{coda\_distruggi@{coda\_distruggi}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_distruggi()}{coda\_distruggi()}}
+{\footnotesize\ttfamily void coda\+\_\+distruggi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Distrugge la coda e dealloca la memoria. 
+\begin{DoxyParams}{Parametri}
+{\em coda} & Puntatore alla coda da distruggere.\\
+\hline
+\end{DoxyParams}
+Distrugge la coda e dealloca la memoria. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere diverso da NULL. 
+\end{DoxyPrecond}
+\Hypertarget{_cittadino_coda_8h_ada3e72f15b3e8c5e7fd76bd6984a2d2c}\label{_cittadino_coda_8h_ada3e72f15b3e8c5e7fd76bd6984a2d2c} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_inserisci@{coda\_inserisci}}
+\index{coda\_inserisci@{coda\_inserisci}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_inserisci()}{coda\_inserisci()}}
+{\footnotesize\ttfamily void coda\+\_\+inserisci (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda,  }\item[{char}]{Codice\+Arrivo\mbox{[}3\mbox{]},  }\item[{char}]{Codice\+Fiscale\mbox{[}17\mbox{]},  }\item[{int}]{Numero\+Bollettino\+Postale,  }\item[{char}]{Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]},  }\item[{int}]{Importo\+Bollettino }\end{DoxyParamCaption})}
+
+Inserisce un cittadino nella coda. 
+\begin{DoxyParams}{Parametri}
+{\em coda} & Puntatore alla coda. \\
+\hline
+{\em Codice\+Arrivo} & Codice di arrivo del cittadino. \\
+\hline
+{\em Codice\+Fiscale} & Codice fiscale del cittadino. \\
+\hline
+{\em Numero\+Bollettino\+Postale} & Numero del bollettino postale del cittadino. \\
+\hline
+{\em Mese\+Scadenza\+Bollettino} & Mese di scadenza del bollettino postale del cittadino. \\
+\hline
+{\em Importo\+Bollettino} & Importo del bollettino postale del cittadino.\\
+\hline
+\end{DoxyParams}
+Inserisce un cittadino nella coda. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere non NULL. 
+
+Codice\+Arrivo deve essere una stringa di 2 caratteri alfanumerici. 
+
+Codice\+Fiscale deve essere una stringa di 16 caratteri alfanumerici. 
+
+Numero\+Bollettino\+Postale deve essere un numero intero. 
+
+Mese\+Scadenza\+Bollettino deve essere una stringa non nulla di massimo 10 caratteri alfabetici, scritto in lettere minuscole e deve essere un mese dell\textquotesingle{}anno. 
+
+Importo\+Bollettino deve essere un numero intero. 
+\end{DoxyPrecond}
+\Hypertarget{_cittadino_coda_8h_aeb0b64e9584a556d1dd9d5452e5f6e85}\label{_cittadino_coda_8h_aeb0b64e9584a556d1dd9d5452e5f6e85} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_primo@{coda\_primo}}
+\index{coda\_primo@{coda\_primo}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_primo()}{coda\_primo()}}
+{\footnotesize\ttfamily void coda\+\_\+primo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda,  }\item[{char}]{Codice\+Arrivo\mbox{[}3\mbox{]},  }\item[{char}]{Codice\+Fiscale\mbox{[}17\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{Numero\+Bollettino\+Postale,  }\item[{char}]{Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{Importo\+Bollettino }\end{DoxyParamCaption})}
+
+Legge il cittadino in testa alla coda senza rimuoverlo. 
+\begin{DoxyParams}{Parametri}
+{\em coda} & Puntatore alla coda. \\
+\hline
+{\em Codice\+Arrivo} & Codice di arrivo del cittadino (output). \\
+\hline
+{\em Codice\+Fiscale} & Codice fiscale del cittadino (output). \\
+\hline
+{\em Numero\+Bollettino\+Postale} & Numero del bollettino postale del cittadino (output). \\
+\hline
+{\em Mese\+Scadenza\+Bollettino} & Mese di scadenza del bollettino postale del cittadino (output). \\
+\hline
+{\em Importo\+Bollettino} & Importo del bollettino postale del cittadino (output).\\
+\hline
+\end{DoxyParams}
+Legge il cittadino in testa alla coda senza rimuoverlo. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere non NULL. 
+
+Codice\+Arrivo deve essere una stringa di 2 caratteri alfanumerici. 
+
+Codice\+Fiscale deve essere una stringa di 16 caratteri alfanumerici. 
+
+Numero\+Bollettino\+Postale deve essere un numero intero. 
+
+Mese\+Scadenza\+Bollettino deve essere una stringa non nulla di massimo 10 caratteri alfabetici, scritto in lettere minuscole e deve essere un mese dell\textquotesingle{}anno. 
+
+Importo\+Bollettino deve essere un numero intero. 
+\end{DoxyPrecond}
+\Hypertarget{_cittadino_coda_8h_abe48fc7b7fde297d62c9aa6f2f351ba4}\label{_cittadino_coda_8h_abe48fc7b7fde297d62c9aa6f2f351ba4} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_rimuovi@{coda\_rimuovi}}
+\index{coda\_rimuovi@{coda\_rimuovi}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_rimuovi()}{coda\_rimuovi()}}
+{\footnotesize\ttfamily void coda\+\_\+rimuovi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Rimuove il cittadino in testa alla coda. 
+\begin{DoxyParams}{Parametri}
+{\em coda} & Puntatore alla coda.\\
+\hline
+\end{DoxyParams}
+Rimuove il cittadino in testa alla coda. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere non NULL. 
+\end{DoxyPrecond}
+\Hypertarget{_cittadino_coda_8h_a6da59045a6d4d240d7d634ead7c4433b}\label{_cittadino_coda_8h_a6da59045a6d4d240d7d634ead7c4433b} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!coda\_vuota@{coda\_vuota}}
+\index{coda\_vuota@{coda\_vuota}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{coda\_vuota()}{coda\_vuota()}}
+{\footnotesize\ttfamily int coda\+\_\+vuota (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Verifica se la coda e\textquotesingle{} vuota. 
+\begin{DoxyParams}{Parametri}
+{\em coda} & Puntatore alla coda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la coda e\textquotesingle{} vuota, 0 altrimenti.
+\end{DoxyReturn}
+Verifica se la coda e\textquotesingle{} vuota. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere non NULL. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+ritorna 0 o 1. 
+\end{DoxyPostcond}
+\Hypertarget{_cittadino_coda_8h_ad60826d2814a29f1c857e162e5e57c04}\label{_cittadino_coda_8h_ad60826d2814a29f1c857e162e5e57c04} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!GetFlagAcquisizione@{GetFlagAcquisizione}}
+\index{GetFlagAcquisizione@{GetFlagAcquisizione}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{GetFlagAcquisizione()}{GetFlagAcquisizione()}}
+{\footnotesize\ttfamily int Get\+Flag\+Acquisizione (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Restituisce il valore corrente del flag di acquisizione. \begin{DoxyReturn}{Restituisce}
+Valore del flag di acquisizione (0 o 1). 
+\end{DoxyReturn}
+\Hypertarget{_cittadino_coda_8h_a4ad948fd6571af55d34f207a1d1b7b6b}\label{_cittadino_coda_8h_a4ad948fd6571af55d34f207a1d1b7b6b} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!SetFlagNegativo@{SetFlagNegativo}}
+\index{SetFlagNegativo@{SetFlagNegativo}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{SetFlagNegativo()}{SetFlagNegativo()}}
+{\footnotesize\ttfamily void Set\+Flag\+Negativo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Imposta il flag di acquisizione a negativo. \Hypertarget{_cittadino_coda_8h_a64282da119728de4109c2845eb6dc6eb}\label{_cittadino_coda_8h_a64282da119728de4109c2845eb6dc6eb} 
+\index{CittadinoCoda.h@{CittadinoCoda.h}!SetFlagPositivo@{SetFlagPositivo}}
+\index{SetFlagPositivo@{SetFlagPositivo}!CittadinoCoda.h@{CittadinoCoda.h}}
+\doxysubsubsection{\texorpdfstring{SetFlagPositivo()}{SetFlagPositivo()}}
+{\footnotesize\ttfamily void Set\+Flag\+Positivo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Imposta il flag di acquisizione a positivo. 

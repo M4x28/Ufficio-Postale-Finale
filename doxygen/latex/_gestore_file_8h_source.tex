@@ -1,0 +1,27 @@
+\doxysection{C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Gestore\+File.h}
+\hypertarget{_gestore_file_8h_source}{}\label{_gestore_file_8h_source}\mbox{\hyperlink{_gestore_file_8h}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GESTOREFILE\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GESTOREFILE\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cittadino_coda_8h}{CittadinoCoda.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MAX\_DIM\_LOG\ 100}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{_gestore_file_8h_a7b1eb0c8be2cfd6438462611042c9c37}{messaggio}}[\mbox{\hyperlink{_gestore_file_8h_a533b1e59e2b13f0a91323e4e37d3f0fa}{MAX\_DIM\_LOG}}];\ \ \textcolor{comment}{//\ Dichiarazione\ di\ un\ array\ di\ caratteri\ per\ contenere\ il\ messaggio\ di\ log}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gestore_file_8h_a43ed0391c407c0c5731e5735b2308bc0}{apri\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_file,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ modo,\ FILE**\ file);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_gestore_file_8h_a929f03e859f9fa9eab79ef190f4057b5}{leggi\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_file,\ \mbox{\hyperlink{struct_coda}{Coda}}*\ coda);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gestore_file_8h_aa836cd680dd91059bf235163c7bd651e}{chiudi\_file}}(FILE*\ file);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gestore_file_8h_adab9f39e67c7134fce7bb4f7cff592aa}{scrivi\_file}}(\mbox{\hyperlink{struct_coda}{Coda}}*\ coda,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_file);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_gestore_file_8h_a62b0996e46a5853c3937354c84e153c6}{scrivi\_log}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_gestore_file_8h_a7b1eb0c8be2cfd6438462611042c9c37}{messaggio}});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GESTOREFILE\_H\_INCLUDED}}
+
+\end{DoxyCode}

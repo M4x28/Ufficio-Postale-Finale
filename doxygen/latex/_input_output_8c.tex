@@ -1,0 +1,158 @@
+\doxysection{Riferimenti per il file C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Input\+Output.c}
+\hypertarget{_input_output_8c}{}\label{_input_output_8c}\index{C:/Users/leobi/Desktop/Ufficio Postale Finale/InputOutput.c@{C:/Users/leobi/Desktop/Ufficio Postale Finale/InputOutput.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \"{}Input\+Output.\+h\"{}}\newline
+{\ttfamily \#include \"{}Validatore.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_input_output_8c_a946dd33a6781fe09a8fc98f38afd506c}{visualizza\+\_\+cittadino}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_input_output_8c_a873c2f479bd1759a4e0ccd1edc19af5f}{visualizza\+\_\+cittadini}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_input_output_8c_a943579c3eacfe25ee746d4b1fa107146}{visualizza\+\_\+struttura}} (char Codice\+Arrivo\mbox{[}3\mbox{]}, char Codice\+Fiscale\mbox{[}17\mbox{]}, int Numero\+Bollettino\+Postale, char Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]}, int Importo\+Bollettino)
+\item 
+void \mbox{\hyperlink{_input_output_8c_a323b248e15ea38fa88825ef44b00767c}{visualizza\+\_\+benvenuto}} ()
+\begin{DoxyCompactList}\small\item\em Visualizza in console l\textquotesingle{}interfaccia di benvenutp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_input_output_8c_a105c73ec0eb215dd104d3f1b7ae1ac94}{visualizza\+\_\+menu}} ()
+\item 
+void \mbox{\hyperlink{_input_output_8c_aafeaa85223040d42ffbc7763001314d7}{visualizza\+\_\+chiusura\+\_\+gestionale}} ()
+\begin{DoxyCompactList}\small\item\em Visualizza in console l\textquotesingle{}interfaccia di chiusura del gestionale. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_input_output_8c_a6a156b3f3ef4061497b2cea417899c21}{acquisisci\+\_\+nome\+\_\+file}} (char \texorpdfstring{$\ast$}{*}nome\+File)
+\item 
+void \mbox{\hyperlink{_input_output_8c_a1b6c78f104e7254f70f3c71b24699b73}{acquisisci\+\_\+codice\+\_\+fiscale}} (char \texorpdfstring{$\ast$}{*}CF)
+\item 
+void \mbox{\hyperlink{_input_output_8c_ab63e945c4a8677337ec800045c073be9}{acquisisci\+\_\+mese\+\_\+scadenza\+\_\+bollettino}} (char \texorpdfstring{$\ast$}{*}Mese\+Scadenza\+Bollettino)
+\item 
+void \mbox{\hyperlink{_input_output_8c_a9d386945d62615b6d1aa796830609978}{acquisisci\+\_\+importo\+\_\+bollettino}} (int \texorpdfstring{$\ast$}{*}Importo\+Bollettino)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Source file per le funzioni di input e output dei dati dei cittadini 
+
+\doxysubsection{Documentazione delle funzioni}
+\Hypertarget{_input_output_8c_a1b6c78f104e7254f70f3c71b24699b73}\label{_input_output_8c_a1b6c78f104e7254f70f3c71b24699b73} 
+\index{InputOutput.c@{InputOutput.c}!acquisisci\_codice\_fiscale@{acquisisci\_codice\_fiscale}}
+\index{acquisisci\_codice\_fiscale@{acquisisci\_codice\_fiscale}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_codice\_fiscale()}{acquisisci\_codice\_fiscale()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+codice\+\_\+fiscale (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{CF }\end{DoxyParamCaption})}
+
+Acquisisce mese scadenza \begin{DoxyPrecond}{Precondizione}
+stringa del codeice fiscale che non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa a schermo se il codice fiscale e\textquotesingle{} valido 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_a9d386945d62615b6d1aa796830609978}\label{_input_output_8c_a9d386945d62615b6d1aa796830609978} 
+\index{InputOutput.c@{InputOutput.c}!acquisisci\_importo\_bollettino@{acquisisci\_importo\_bollettino}}
+\index{acquisisci\_importo\_bollettino@{acquisisci\_importo\_bollettino}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_importo\_bollettino()}{acquisisci\_importo\_bollettino()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+importo\+\_\+bollettino (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{Importo\+Bollettino }\end{DoxyParamCaption})}
+
+Acquisisce importo bollettino \begin{DoxyPrecond}{Precondizione}
+putatore ad intero di Importo\+Bollettino che non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa a schermo se importo e\textquotesingle{} valido 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_ab63e945c4a8677337ec800045c073be9}\label{_input_output_8c_ab63e945c4a8677337ec800045c073be9} 
+\index{InputOutput.c@{InputOutput.c}!acquisisci\_mese\_scadenza\_bollettino@{acquisisci\_mese\_scadenza\_bollettino}}
+\index{acquisisci\_mese\_scadenza\_bollettino@{acquisisci\_mese\_scadenza\_bollettino}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_mese\_scadenza\_bollettino()}{acquisisci\_mese\_scadenza\_bollettino()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+mese\+\_\+scadenza\+\_\+bollettino (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{Mese\+Scadenza\+Bollettino }\end{DoxyParamCaption})}
+
+Acquisisce mese scadenza \begin{DoxyPrecond}{Precondizione}
+stringa di Mese\+Scadenza\+Bollettino che non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa a schermo se Mese\+Scadenza\+Bollettino e\textquotesingle{} valido 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_a6a156b3f3ef4061497b2cea417899c21}\label{_input_output_8c_a6a156b3f3ef4061497b2cea417899c21} 
+\index{InputOutput.c@{InputOutput.c}!acquisisci\_nome\_file@{acquisisci\_nome\_file}}
+\index{acquisisci\_nome\_file@{acquisisci\_nome\_file}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_nome\_file()}{acquisisci\_nome\_file()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} acquisisci\+\_\+nome\+\_\+file (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+File }\end{DoxyParamCaption})}
+
+Acquisisce mese scadenza \begin{DoxyPrecond}{Precondizione}
+stringa del nome\+File che non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa a schermo se il nome\+File non e\textquotesingle{} valido altrimenti ritorna nome\+File 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_a323b248e15ea38fa88825ef44b00767c}\label{_input_output_8c_a323b248e15ea38fa88825ef44b00767c} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_benvenuto@{visualizza\_benvenuto}}
+\index{visualizza\_benvenuto@{visualizza\_benvenuto}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_benvenuto()}{visualizza\_benvenuto()}}
+{\footnotesize\ttfamily void visualizza\+\_\+benvenuto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visualizza in console l\textquotesingle{}interfaccia di benvenutp. 
+
+Visualizza Messaggio di Benvenuto in Console \begin{DoxyPostcond}{Postcondizione}
+stampa il messaggio di benvenuto 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_aafeaa85223040d42ffbc7763001314d7}\label{_input_output_8c_aafeaa85223040d42ffbc7763001314d7} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_chiusura\_gestionale@{visualizza\_chiusura\_gestionale}}
+\index{visualizza\_chiusura\_gestionale@{visualizza\_chiusura\_gestionale}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_chiusura\_gestionale()}{visualizza\_chiusura\_gestionale()}}
+{\footnotesize\ttfamily void visualizza\+\_\+chiusura\+\_\+gestionale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visualizza in console l\textquotesingle{}interfaccia di chiusura del gestionale. 
+
+Chiusura gestione \begin{DoxyPostcond}{Postcondizione}
+messaggio di chiusura gestione 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_a873c2f479bd1759a4e0ccd1edc19af5f}\label{_input_output_8c_a873c2f479bd1759a4e0ccd1edc19af5f} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_cittadini@{visualizza\_cittadini}}
+\index{visualizza\_cittadini@{visualizza\_cittadini}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_cittadini()}{visualizza\_cittadini()}}
+{\footnotesize\ttfamily void visualizza\+\_\+cittadini (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Visualizza i dati di tutti i cittadini nella coda \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere non NULL. 
+\end{DoxyPrecond}
+\Hypertarget{_input_output_8c_a946dd33a6781fe09a8fc98f38afd506c}\label{_input_output_8c_a946dd33a6781fe09a8fc98f38afd506c} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_cittadino@{visualizza\_cittadino}}
+\index{visualizza\_cittadino@{visualizza\_cittadino}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_cittadino()}{visualizza\_cittadino()}}
+{\footnotesize\ttfamily void visualizza\+\_\+cittadino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Visualizza i dati di un cittadino in testa alla coda \begin{DoxyPrecond}{Precondizione}
+coda Puntatore alla coda dei cittadini 
+\end{DoxyPrecond}
+\Hypertarget{_input_output_8c_a105c73ec0eb215dd104d3f1b7ae1ac94}\label{_input_output_8c_a105c73ec0eb215dd104d3f1b7ae1ac94} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_menu@{visualizza\_menu}}
+\index{visualizza\_menu@{visualizza\_menu}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_menu()}{visualizza\_menu()}}
+{\footnotesize\ttfamily int visualizza\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visualizza Menu\textquotesingle{} con opzioni selezionabili dall\textquotesingle{}utente \begin{DoxyPostcond}{Postcondizione}
+stampa un menu 
+
+stampa risultato scelta 
+\end{DoxyPostcond}
+\Hypertarget{_input_output_8c_a943579c3eacfe25ee746d4b1fa107146}\label{_input_output_8c_a943579c3eacfe25ee746d4b1fa107146} 
+\index{InputOutput.c@{InputOutput.c}!visualizza\_struttura@{visualizza\_struttura}}
+\index{visualizza\_struttura@{visualizza\_struttura}!InputOutput.c@{InputOutput.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_struttura()}{visualizza\_struttura()}}
+{\footnotesize\ttfamily void visualizza\+\_\+struttura (\begin{DoxyParamCaption}\item[{char}]{Codice\+Arrivo\mbox{[}3\mbox{]},  }\item[{char}]{Codice\+Fiscale\mbox{[}17\mbox{]},  }\item[{int}]{Numero\+Bollettino\+Postale,  }\item[{char}]{Mese\+Scadenza\+Bollettino\mbox{[}11\mbox{]},  }\item[{int}]{Importo\+Bollettino }\end{DoxyParamCaption})}
+
+Visualizza i dati del cittadino relativi al bollettino postale \begin{DoxyPrecond}{Precondizione}
+Codice\+Arrivo deve essere una stringa di 2 caratteri alfanumerici. 
+
+Codice\+Fiscale deve essere una stringa di 16 caratteri alfanumerici. 
+
+Numero\+Bollettino\+Postale deve essere un numero intero. 
+
+Mese\+Scadenza\+Bollettino deve essere una stringa non nulla di massimo 10 caratteri alfabetici, scritto in lettere minuscole e deve essere un mese dell\textquotesingle{}anno. 
+
+Importo\+Bollettino deve essere un numero intero. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa voliri di input 
+\end{DoxyPostcond}

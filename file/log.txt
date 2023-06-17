@@ -1,0 +1,18 @@
+[2023-06-17 02:59:26] Avvio del gestionale.
+[2023-06-17 02:59:31] Opzione scelta: 1
+[2023-06-17 02:59:39] Inizio lettura file: file/input.txt
+[2023-06-17 02:59:39] Fine lettura file: file/input.txt
+[2023-06-17 02:59:53] Opzione scelta: 2
+[2023-06-17 02:59:53] Inizio ricerca min e Max
+[2023-06-17 02:59:53] Inizio scrittura file: file/MinMax.txt
+[2023-06-17 02:59:53] Fine lettura file: file/MinMax.txt
+[2023-06-17 02:59:53] Esportazione min e Max avvenuta con successo! (file/MinMax.txt)
+[2023-06-17 02:59:53] Fine ricerca min e Max
+[2023-06-17 03:00:22] Opzione scelta: 3
+[2023-06-17 03:00:28] Inizio modifica cittadino: BRRLRD03H28A662L
+[2023-06-17 03:00:55] Fine modifica cittadino: BRRLRD03H28A662L
+[2023-06-17 03:00:57] Inizio scrittura file: file/Modifica.txt
+[2023-06-17 03:00:57] Fine lettura file: file/Modifica.txt
+[2023-06-17 03:00:57] Esportazione Modifiche avvenuta con successo! (file/Modifica.txt)
+[2023-06-17 03:01:22] Opzione scelta: 4
+[2023-06-17 03:01:25] Terminazione del gestionale.

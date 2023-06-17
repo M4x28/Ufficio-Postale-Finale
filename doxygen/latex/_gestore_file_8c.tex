@@ -1,0 +1,109 @@
+\doxysection{Riferimenti per il file C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Gestore\+File.c}
+\hypertarget{_gestore_file_8c}{}\label{_gestore_file_8c}\index{C:/Users/leobi/Desktop/Ufficio Postale Finale/GestoreFile.c@{C:/Users/leobi/Desktop/Ufficio Postale Finale/GestoreFile.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \"{}Cittadino\+Coda.\+h\"{}}\newline
+{\ttfamily \#include \"{}Gestore\+File.\+h\"{}}\newline
+{\ttfamily \#include \"{}validatore.\+h\"{}}\newline
+\doxysubsubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gestore_file_8c_ac9de55567f16a77fa928037b60f1b5b9}{MAX\+\_\+\+DIM\+\_\+\+RIGA}}~40
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_gestore_file_8c_a43ed0391c407c0c5731e5735b2308bc0}{apri\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+file, const char \texorpdfstring{$\ast$}{*}modo, FILE \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}file)
+\item 
+void \mbox{\hyperlink{_gestore_file_8c_a929f03e859f9fa9eab79ef190f4057b5}{leggi\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+file, \mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+int \mbox{\hyperlink{_gestore_file_8c_adab9f39e67c7134fce7bb4f7cff592aa}{scrivi\+\_\+file}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda, const char \texorpdfstring{$\ast$}{*}nome\+\_\+file)
+\item 
+int \mbox{\hyperlink{_gestore_file_8c_aa836cd680dd91059bf235163c7bd651e}{chiudi\+\_\+file}} (FILE \texorpdfstring{$\ast$}{*}file)
+\item 
+void \mbox{\hyperlink{_gestore_file_8c_a62b0996e46a5853c3937354c84e153c6}{scrivi\+\_\+log}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_gestore_file_8h_a7b1eb0c8be2cfd6438462611042c9c37}{messaggio}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Implementazione delle funzioni per la gestione dei file di testo. 
+
+\doxysubsection{Documentazione delle definizioni}
+\Hypertarget{_gestore_file_8c_ac9de55567f16a77fa928037b60f1b5b9}\label{_gestore_file_8c_ac9de55567f16a77fa928037b60f1b5b9} 
+\index{GestoreFile.c@{GestoreFile.c}!MAX\_DIM\_RIGA@{MAX\_DIM\_RIGA}}
+\index{MAX\_DIM\_RIGA@{MAX\_DIM\_RIGA}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_DIM\_RIGA}{MAX\_DIM\_RIGA}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+DIM\+\_\+\+RIGA~40}
+
+
+
+\doxysubsection{Documentazione delle funzioni}
+\Hypertarget{_gestore_file_8c_a43ed0391c407c0c5731e5735b2308bc0}\label{_gestore_file_8c_a43ed0391c407c0c5731e5735b2308bc0} 
+\index{GestoreFile.c@{GestoreFile.c}!apri\_file@{apri\_file}}
+\index{apri\_file@{apri\_file}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{apri\_file()}{apri\_file()}}
+{\footnotesize\ttfamily int apri\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+\_\+file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{modo,  }\item[{FILE \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{file }\end{DoxyParamCaption})}
+
+Apre un file di testo in un determinato modo. \begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file una stringa non nulla. 
+
+modo e\textquotesingle{} una stringa non nulla. 
+
+file e\textquotesingle{} un puntatore al puntatore al file e deve essere non NULL. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il file e\textquotesingle{} stato aperto con successo, 0 altrimenti. 
+\end{DoxyPostcond}
+\Hypertarget{_gestore_file_8c_aa836cd680dd91059bf235163c7bd651e}\label{_gestore_file_8c_aa836cd680dd91059bf235163c7bd651e} 
+\index{GestoreFile.c@{GestoreFile.c}!chiudi\_file@{chiudi\_file}}
+\index{chiudi\_file@{chiudi\_file}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{chiudi\_file()}{chiudi\_file()}}
+{\footnotesize\ttfamily int chiudi\+\_\+file (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file }\end{DoxyParamCaption})}
+
+Chiude il file aperto. \begin{DoxyPrecond}{Precondizione}
+file e\textquotesingle{} il puntatore al file e deve essere diverso da NULL. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+ritorna 0 o 1. 
+\end{DoxyPostcond}
+\Hypertarget{_gestore_file_8c_a929f03e859f9fa9eab79ef190f4057b5}\label{_gestore_file_8c_a929f03e859f9fa9eab79ef190f4057b5} 
+\index{GestoreFile.c@{GestoreFile.c}!leggi\_file@{leggi\_file}}
+\index{leggi\_file@{leggi\_file}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{leggi\_file()}{leggi\_file()}}
+{\footnotesize\ttfamily void leggi\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+\_\+file,  }\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Legge i dati dei cittadini da un file di testo e li inserisce in una coda. Se il file contiene meno di 3 cittadini validi, il programma termina con un messaggio di errore. \begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file una stringa non nulla. 
+
+modo e\textquotesingle{} una stringa non nulla. 
+
+file e\textquotesingle{} un puntatore al puntatore al file e deve essere non NULL. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+valori 1 o 0. 
+\end{DoxyPostcond}
+Eliminazione spazi,tab e a capo di fine file per evitare loop infinito\Hypertarget{_gestore_file_8c_adab9f39e67c7134fce7bb4f7cff592aa}\label{_gestore_file_8c_adab9f39e67c7134fce7bb4f7cff592aa} 
+\index{GestoreFile.c@{GestoreFile.c}!scrivi\_file@{scrivi\_file}}
+\index{scrivi\_file@{scrivi\_file}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{scrivi\_file()}{scrivi\_file()}}
+{\footnotesize\ttfamily int scrivi\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+\_\+file }\end{DoxyParamCaption})}
+
+Scrive i dati contenuti in una coda su un file di testo. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} il parametro della coda e non deve essere NULL. 
+
+nome\+\_\+file deve essere una stringa non vuota. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+ritorna 0 o 1. 
+\end{DoxyPostcond}
+\Hypertarget{_gestore_file_8c_a62b0996e46a5853c3937354c84e153c6}\label{_gestore_file_8c_a62b0996e46a5853c3937354c84e153c6} 
+\index{GestoreFile.c@{GestoreFile.c}!scrivi\_log@{scrivi\_log}}
+\index{scrivi\_log@{scrivi\_log}!GestoreFile.c@{GestoreFile.c}}
+\doxysubsubsection{\texorpdfstring{scrivi\_log()}{scrivi\_log()}}
+{\footnotesize\ttfamily void scrivi\+\_\+log (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{messaggio }\end{DoxyParamCaption})}
+
+Log Operazioni Utente. \begin{DoxyPrecond}{Precondizione}
+messaggio del log non deve essere NULL. 
+\end{DoxyPrecond}

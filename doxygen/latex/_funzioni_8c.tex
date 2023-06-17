@@ -1,0 +1,76 @@
+\doxysection{Riferimenti per il file C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Funzioni.c}
+\hypertarget{_funzioni_8c}{}\label{_funzioni_8c}\index{C:/Users/leobi/Desktop/Ufficio Postale Finale/Funzioni.c@{C:/Users/leobi/Desktop/Ufficio Postale Finale/Funzioni.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \"{}Cittadino\+Coda.\+h\"{}}\newline
+{\ttfamily \#include \"{}Funzioni.\+h\"{}}\newline
+{\ttfamily \#include \"{}Gestore\+File.\+h\"{}}\newline
+{\ttfamily \#include \"{}Input\+Output.\+h\"{}}\newline
+{\ttfamily \#include \"{}Validatore.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_funzioni_8c_af4b0712b2d2cbc5e5fa59ddc55ce819e}{min\+MAX}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_funzioni_8c_a1de726870c94d7a12f3b6f496f050aa9}{modifica\+\_\+cittadino}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda, \mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda\+Modificati)
+\item 
+void \mbox{\hyperlink{_funzioni_8c_a7cb374c739093cb068dc2fe078f9fcb3}{modifica\+\_\+cittadini}} (\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda)
+\item 
+void \mbox{\hyperlink{_funzioni_8c_a0e042e65d5b5f542cfe88956ee1a9903}{gestore\+\_\+scelta}} (int scelta, \mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}coda\+Cittadini)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Le funzioni implementano le operazioni sulla coda dei cittadini e sul file Min\+Max.\+txt e Modifica.\+txt. 
+
+\doxysubsection{Documentazione delle funzioni}
+\Hypertarget{_funzioni_8c_a0e042e65d5b5f542cfe88956ee1a9903}\label{_funzioni_8c_a0e042e65d5b5f542cfe88956ee1a9903} 
+\index{Funzioni.c@{Funzioni.c}!gestore\_scelta@{gestore\_scelta}}
+\index{gestore\_scelta@{gestore\_scelta}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{\texorpdfstring{gestore\_scelta()}{gestore\_scelta()}}
+{\footnotesize\ttfamily void gestore\+\_\+scelta (\begin{DoxyParamCaption}\item[{int}]{scelta,  }\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda\+Cittadini }\end{DoxyParamCaption})}
+
+Gestore scelta utente \begin{DoxyPrecond}{Precondizione}
+scelta definito come intero 
+
+coda\+Cittadini e\textquotesingle{} la coda. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+stampa menu per la scelta utente 
+
+stampa il risultato della scelta 
+\end{DoxyPostcond}
+Imposto il flag di acquisizione del file in input con i cittadini a 1 in modo tale da evitare di riaggiungere gli stessi cittadini in coda
+
+Modifica con Visualizzazione e Memorizzazione dei cittadini modificati\Hypertarget{_funzioni_8c_af4b0712b2d2cbc5e5fa59ddc55ce819e}\label{_funzioni_8c_af4b0712b2d2cbc5e5fa59ddc55ce819e} 
+\index{Funzioni.c@{Funzioni.c}!minMAX@{minMAX}}
+\index{minMAX@{minMAX}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{\texorpdfstring{minMAX()}{minMAX()}}
+{\footnotesize\ttfamily void min\+MAX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Trova il cittadino con il numero di bollettino postale minimo e il cittadino con il numero di bollettino postale massimo nella coda dei cittadini, li stampa a schermo e li inserisce nel file Min\+Max.\+txt. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere diverso da NULL. 
+\end{DoxyPrecond}
+\Hypertarget{_funzioni_8c_a7cb374c739093cb068dc2fe078f9fcb3}\label{_funzioni_8c_a7cb374c739093cb068dc2fe078f9fcb3} 
+\index{Funzioni.c@{Funzioni.c}!modifica\_cittadini@{modifica\_cittadini}}
+\index{modifica\_cittadini@{modifica\_cittadini}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{\texorpdfstring{modifica\_cittadini()}{modifica\_cittadini()}}
+{\footnotesize\ttfamily void modifica\+\_\+cittadini (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda }\end{DoxyParamCaption})}
+
+Modifica gli elementi dei cittadini nella coda con Visualizzazione e Memorizzazione su File. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere diverso da NULL. 
+\end{DoxyPrecond}
+\Hypertarget{_funzioni_8c_a1de726870c94d7a12f3b6f496f050aa9}\label{_funzioni_8c_a1de726870c94d7a12f3b6f496f050aa9} 
+\index{Funzioni.c@{Funzioni.c}!modifica\_cittadino@{modifica\_cittadino}}
+\index{modifica\_cittadino@{modifica\_cittadino}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{\texorpdfstring{modifica\_cittadino()}{modifica\_cittadino()}}
+{\footnotesize\ttfamily void modifica\+\_\+cittadino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda,  }\item[{\mbox{\hyperlink{struct_coda}{Coda}} \texorpdfstring{$\ast$}{*}}]{coda\+Modificati }\end{DoxyParamCaption})}
+
+Modifica gli elementi di un cittadino nella coda. \begin{DoxyPrecond}{Precondizione}
+coda e\textquotesingle{} un puntatore alla coda e deve essere diverso da NULL. 
+
+coda\+Modificati e\textquotesingle{} un puntatore alla coda e deve essere diverso da NULL. 
+\end{DoxyPrecond}
+Acquisizione con Validazione del CF in input da tastiera
+
+Input Mese\+Scadenza\+Bollettino e Importo\+Bollettino con Validazione

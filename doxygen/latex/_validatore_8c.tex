@@ -1,0 +1,136 @@
+\doxysection{Riferimenti per il file C\+:/\+Users/leobi/\+Desktop/\+Ufficio Postale Finale/\+Validatore.c}
+\hypertarget{_validatore_8c}{}\label{_validatore_8c}\index{C:/Users/leobi/Desktop/Ufficio Postale Finale/Validatore.c@{C:/Users/leobi/Desktop/Ufficio Postale Finale/Validatore.c}}
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \"{}Gestore\+File.\+h\"{}}\newline
+{\ttfamily \#include \"{}Validatore.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_validatore_8c_af0f8eeaa021d6aba059905b54f066eec}{valida\+\_\+codice\+\_\+arrivo}} (const char \texorpdfstring{$\ast$}{*}codice\+\_\+arrivo)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_a99f3f114c973c6eee39260346a138fb9}{valida\+\_\+codice\+\_\+fiscale}} (const char \texorpdfstring{$\ast$}{*}codice\+\_\+fiscale)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_a3deeffb2b872c5811a357f20b297cd6a}{valida\+\_\+numero\+\_\+bollettino}} (const char \texorpdfstring{$\ast$}{*}numero)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_abdf58eca8b0c9cd5d76d5b59a8a9e338}{valida\+\_\+mese\+\_\+scadenza}} (const char \texorpdfstring{$\ast$}{*}mese)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_aaf39486a216ea84a13ba036c8db5038a}{valida\+\_\+importo\+\_\+bollettino}} (int importo)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_a4d0e9ca878fb09a4a6cc6cc96ccbb402}{valida\+\_\+nome\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}nome\+File)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_ac22614fc21d2aa50d1d5a9b24981481d}{valida\+\_\+estensione\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+file)
+\item 
+bool \mbox{\hyperlink{_validatore_8c_a794ce04c28daadf80d72788064d326aa}{validatore\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}nome\+File)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Implementazione delle funzioni per la validazione dei campi e degli input. 
+
+\doxysubsection{Documentazione delle funzioni}
+\Hypertarget{_validatore_8c_af0f8eeaa021d6aba059905b54f066eec}\label{_validatore_8c_af0f8eeaa021d6aba059905b54f066eec} 
+\index{Validatore.c@{Validatore.c}!valida\_codice\_arrivo@{valida\_codice\_arrivo}}
+\index{valida\_codice\_arrivo@{valida\_codice\_arrivo}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_codice\_arrivo()}{valida\_codice\_arrivo()}}
+{\footnotesize\ttfamily bool valida\+\_\+codice\+\_\+arrivo (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{codice\+\_\+arrivo }\end{DoxyParamCaption})}
+
+Verifica la validita\textquotesingle{} di un codice di arrivo. Un codice di arrivo e\textquotesingle{} valido se e\textquotesingle{} composto da due caratteri alfanumerici. \begin{DoxyPrecond}{Precondizione}
+codice\+\_\+arrivo non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+il valore di ritorno e\textquotesingle{} 0 o 1 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_a99f3f114c973c6eee39260346a138fb9}\label{_validatore_8c_a99f3f114c973c6eee39260346a138fb9} 
+\index{Validatore.c@{Validatore.c}!valida\_codice\_fiscale@{valida\_codice\_fiscale}}
+\index{valida\_codice\_fiscale@{valida\_codice\_fiscale}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_codice\_fiscale()}{valida\_codice\_fiscale()}}
+{\footnotesize\ttfamily bool valida\+\_\+codice\+\_\+fiscale (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{codice\+\_\+fiscale }\end{DoxyParamCaption})}
+
+Questa funzione controlla che il codice fiscale sia composto da 16 caratteri alfanumerici. \begin{DoxyPrecond}{Precondizione}
+codice\+\_\+arrivo non deve essere NULL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il codice fiscale e\textquotesingle{} valido, 0 altrimenti 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_ac22614fc21d2aa50d1d5a9b24981481d}\label{_validatore_8c_ac22614fc21d2aa50d1d5a9b24981481d} 
+\index{Validatore.c@{Validatore.c}!valida\_estensione\_file@{valida\_estensione\_file}}
+\index{valida\_estensione\_file@{valida\_estensione\_file}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_estensione\_file()}{valida\_estensione\_file()}}
+{\footnotesize\ttfamily bool valida\+\_\+estensione\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+\_\+file }\end{DoxyParamCaption})}
+
+Verifica che l\textquotesingle{}estensione del file sia .txt \begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file deve essere una stringa non nulla 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il file ha estensione .txt, 0 altrimenti 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_aaf39486a216ea84a13ba036c8db5038a}\label{_validatore_8c_aaf39486a216ea84a13ba036c8db5038a} 
+\index{Validatore.c@{Validatore.c}!valida\_importo\_bollettino@{valida\_importo\_bollettino}}
+\index{valida\_importo\_bollettino@{valida\_importo\_bollettino}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_importo\_bollettino()}{valida\_importo\_bollettino()}}
+{\footnotesize\ttfamily bool valida\+\_\+importo\+\_\+bollettino (\begin{DoxyParamCaption}\item[{int}]{importo }\end{DoxyParamCaption})}
+
+Verifica la validita\textquotesingle{} dell\textquotesingle{}importo di un bollettino postale 
+\begin{DoxyParams}{Parametri}
+{\em importo} & L\textquotesingle{}importo del bollettino in euro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}importo e\textquotesingle{} positivo, 0 altrimenti 
+\end{DoxyReturn}
+\Hypertarget{_validatore_8c_abdf58eca8b0c9cd5d76d5b59a8a9e338}\label{_validatore_8c_abdf58eca8b0c9cd5d76d5b59a8a9e338} 
+\index{Validatore.c@{Validatore.c}!valida\_mese\_scadenza@{valida\_mese\_scadenza}}
+\index{valida\_mese\_scadenza@{valida\_mese\_scadenza}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_mese\_scadenza()}{valida\_mese\_scadenza()}}
+{\footnotesize\ttfamily bool valida\+\_\+mese\+\_\+scadenza (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{mese }\end{DoxyParamCaption})}
+
+Verifica la validita\textquotesingle{} del mese di scadenza di una carta di credito. \begin{DoxyPrecond}{Precondizione}
+mese deve essere uno dei seguenti valori\+: \"{}gennaio\"{}, \"{}febbraio\"{}, \"{}marzo\"{}, \"{}aprile\"{}, \"{}maggio\"{}, \"{}giugno\"{}, \"{}luglio\"{}, \"{}agosto\"{}, \"{}settembre\"{}, \"{}ottobre\"{}, \"{}novembre\"{}, \"{}dicembre\"{}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il mese e\textquotesingle{} valido, 0 altrimenti. 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_a4d0e9ca878fb09a4a6cc6cc96ccbb402}\label{_validatore_8c_a4d0e9ca878fb09a4a6cc6cc96ccbb402} 
+\index{Validatore.c@{Validatore.c}!valida\_nome\_file@{valida\_nome\_file}}
+\index{valida\_nome\_file@{valida\_nome\_file}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_nome\_file()}{valida\_nome\_file()}}
+{\footnotesize\ttfamily bool valida\+\_\+nome\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+File }\end{DoxyParamCaption})}
+
+Verifica se il nome del file e\textquotesingle{} valido \begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file deve essere una stringa non nulla 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il nome del file non e\textquotesingle{} vuoto, 0 altrimenti 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_a3deeffb2b872c5811a357f20b297cd6a}\label{_validatore_8c_a3deeffb2b872c5811a357f20b297cd6a} 
+\index{Validatore.c@{Validatore.c}!valida\_numero\_bollettino@{valida\_numero\_bollettino}}
+\index{valida\_numero\_bollettino@{valida\_numero\_bollettino}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{valida\_numero\_bollettino()}{valida\_numero\_bollettino()}}
+{\footnotesize\ttfamily bool valida\+\_\+numero\+\_\+bollettino (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{numero }\end{DoxyParamCaption})}
+
+Valida un numero di bollettino postale. Un numero di bollettino postale e\textquotesingle{} valido se e\textquotesingle{} un intero positivo e ha una lunghezza almeno di 5 caratteri numerici. \begin{DoxyPrecond}{Precondizione}
+importo deve essere un numero intero 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il numero e\textquotesingle{} valido, 0 altrimenti 
+\end{DoxyPostcond}
+\Hypertarget{_validatore_8c_a794ce04c28daadf80d72788064d326aa}\label{_validatore_8c_a794ce04c28daadf80d72788064d326aa} 
+\index{Validatore.c@{Validatore.c}!validatore\_file@{validatore\_file}}
+\index{validatore\_file@{validatore\_file}!Validatore.c@{Validatore.c}}
+\doxysubsubsection{\texorpdfstring{validatore\_file()}{validatore\_file()}}
+{\footnotesize\ttfamily bool validatore\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+File }\end{DoxyParamCaption})}
+
+Validatore Percorso File inserito dall\textquotesingle{}utente \begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file deve essere una stringa non nulla 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+1 se il file supera tutti i controlli, altrimenti 0 
+\end{DoxyPostcond}
+Verifica nome\+File e che l\textquotesingle{}estensione del file sia .txt
+
+Valida Estensione File
+
+Se il percorso del file fornito e\textquotesingle{} corretto, allora verifico la sua esistenza effettiva
